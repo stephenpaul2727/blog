@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('/css/master-style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/css/master-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/css/font-awesome.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -30,7 +30,7 @@
 @yield('content')
 
 <!-- Footer -->
-<footer class="container-fluid bg-2 text-center">
+<footer class="container-fluid bg-2 text-center" style="bottom:0px;">
     I am a social person too. Let's stay connected. <br/>
     <a href="https://www.facebook.com/stephenpaul2727" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
     <a href="https://www.instagram.com/s_t_e_p_h_e_n_p_a_u_l" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>

@@ -16,10 +16,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="container navHead" id="mainNav">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">
+<div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
     <a style="float:left;text-align:left" href="/">Stephen Paul</a>
-    <a href="#">LOGIN</a>
+    <a href="/login">LOGIN</a>
     <a href="#">TIMELINE</a>
     <a href="/message/create">MESSAGE</a>
     <a href="">RÉSUMÉ</a>

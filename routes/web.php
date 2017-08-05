@@ -15,7 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
+
 Route::resource('message','MessagesController');
 
 Route::resource('reply','RepliesController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

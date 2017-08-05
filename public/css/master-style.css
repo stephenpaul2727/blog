@@ -3,7 +3,7 @@ body
     font: 20px 'Quicksand', sans-serif;
     line-height: 1.5;
     color: #000000;
-    background-color: #F8F8F8;
+    background-color: #7FCECB;
     position: relative;
 }
 p
@@ -173,3 +173,5 @@ body {
     font-size: 18px;
     text-overflow: ellipsis;
 }
+
+

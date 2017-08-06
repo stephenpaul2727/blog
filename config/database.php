@@ -55,11 +55,11 @@ return [
         //prod
         'mysql' => [
             'driver' => 'mysql',
-            'host' => getenv('HOST'),
-            'port' => getenv('PORT'),
-            'database' => getenv('DATABASE'),
-            'username' => getenv('USERNAME'),
-            'password' => getenv('PASSWORD'),
+            'host' => env('HOST'),
+            'port' => env('PORT'),
+            'database' => env('DATABASE'),
+            'username' => env('USERNAME'),
+            'password' => env('PASSWORD'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',

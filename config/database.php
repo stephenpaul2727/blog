@@ -1,8 +1,5 @@
 <?php
 
-$dbkey = env('CLEARDB_DATABASE_URL');
-var_dump($dbkey);
-
 return [
 
     /*

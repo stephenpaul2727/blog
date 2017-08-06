@@ -55,9 +55,14 @@ return [
     |
     */
 
+//    'from' => [
+//        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+//        'name' => env('MAIL_FROM_NAME', 'Example'),
+//    ],
+
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => getenv('MAIL_FROM_ADDRESS'),
+        'name' => getenv('MAIL_FROM_NAME'),
     ],
 
     /*
@@ -84,7 +89,8 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+//    'username' => env('MAIL_USERNAME'),
+    'username' => getenv('MAIL_USERNAME'),
 
     /*
     |--------------------------------------------------------------------------
@@ -97,7 +103,8 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+//    'password' => env('MAIL_PASSWORD'),
+    'password' => getenv('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

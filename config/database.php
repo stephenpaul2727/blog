@@ -1,5 +1,8 @@
 <?php
 
+$dbkey = env('CLEARDB_DATABASE_URL');
+var_dump($dbkey);
+
 return [
 
     /*
@@ -52,35 +55,20 @@ return [
             'prefix' => '',
         ],
 
-        //prod
+        //dev
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('HOST'),
-            'port' => env('PORT'),
-            'database' => env('DATABASE'),
-            'username' => env('USERNAME'),
-            'password' => env('PASSWORD'),
+            'host' => env('DB_HOST'),
+            'port' => env('DB_PORT'),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'strict' => false,
             'engine' => null,
         ],
-
-        //dev
-//        'mysql' => [
-//            'driver' => 'mysql',
-//            'host' => env('DB_HOST'),
-//            'port' => env('DB_PORT'),
-//            'database' => env('DB_DATABASE'),
-//            'username' => env('DB_USERNAME'),
-//            'password' => env('DB_PASSWORD'),
-//            'charset' => 'utf8',
-//            'collation' => 'utf8_unicode_ci',
-//            'prefix' => '',
-//            'strict' => false,
-//            'engine' => null,
-//        ],
 
         'pgsql' => [
             'driver' => 'pgsql',

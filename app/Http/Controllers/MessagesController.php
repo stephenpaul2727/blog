@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Support\Facades\Auth;
 class MessagesController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +26,12 @@ class MessagesController extends Controller
      */
     public function create()
     {
-        return view('message.create');
+        if(Auth::user()->verified){
+            return view('message.create');
+        }
+        else{
+            return view('verifywarning');
+        }
     }
 
     /**

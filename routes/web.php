@@ -21,7 +21,8 @@ Route::resource('message','MessagesController');
 
 Route::resource('reply','RepliesController');
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/logout', 'Auth\LoginController@logout');

@@ -18,9 +18,12 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">
 <div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
-    <a style="float:left;text-align:left" href="/">Stephen Paul</a>
-    <a href="/login">MESSAGE</a>
-    <a href="">RÉSUMÉ</a>
+    <a style="float:left;text-align:left" href="/">@if( Auth::check() )
+            {{ Auth::user()->name }}
+        @endif</a>
+    <a href="/logout">LOGOUT</a>
+    <a href="message/index">HISTORY</a>
+    <a href="/message/create">MESSAGE</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toggleVerticalLayout()">&#9776;</a>
 </div>
 

@@ -2,10 +2,11 @@
 
 @section('content')
 <div class="container" style="margin-top:10%; margin-bottom: 10%; font-size: 16px;">
+    <h4 class="margin" style="text-align:center">Hey! Nice to meet you! Please register here.</h4>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Register <a href="/login" class="pull-right">Already Registered?</a></div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
-use App\Models\Reply;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +11,7 @@ class MessagesController extends Controller
 {
 
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource for history.
      *
      * @return \Illuminate\Http\Response
      */
@@ -20,6 +20,17 @@ class MessagesController extends Controller
         $user_email = Auth::user()->email;
         $messages = Message::where('email','=',$user_email)->get();
         return view('history.index')->with('messages',$messages);
+    }
+
+    /**
+     * Display a listing of the resource for timeline.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function indexTimeline()
+    {
+        $messages = Message::all();
+        return view('timeline.index')->with('messages',$messages);
     }
 
     /**
@@ -57,6 +68,7 @@ class MessagesController extends Controller
         $message = new Message;
         $message->email = Auth::user()->email;
         $message->description = $request->description;
+        $message->messageperson = Auth::user()->name;
         $message->save();
         $request->session()->flash('success','Your message is delivered!');
         return redirect('message/create');

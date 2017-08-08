@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/timeline','MessagesController@indexTimeline');
+
 Route::get('/history/index','MessagesController@index');
 
 Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');

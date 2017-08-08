@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
+use App\Models\Reply;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -16,7 +17,9 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        //
+        $user_email = Auth::user()->email;
+        $messages = Message::where('email','=',$user_email)->get();
+        return view('history.index')->with('messages',$messages);
     }
 
     /**
@@ -43,8 +46,7 @@ class MessagesController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email|max:255',
-            'description' => 'required',
+            'description' => 'required|max:250',
         ]);
 
         if ($validator->fails()) {
@@ -53,7 +55,7 @@ class MessagesController extends Controller
                 ->withInput();
         }
         $message = new Message;
-        $message->email = $request->email;
+        $message->email = Auth::user()->email;
         $message->description = $request->description;
         $message->save();
         $request->session()->flash('success','Your message is delivered!');

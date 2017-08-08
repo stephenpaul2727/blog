@@ -12,8 +12,13 @@
 */
 
 Route::get('/', function () {
+    if(\Illuminate\Support\Facades\Auth::check()){
+        return redirect('/home');
+    }
     return view('welcome');
 });
+
+Route::get('/history/index','MessagesController@index');
 
 Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
 

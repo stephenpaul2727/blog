@@ -17,7 +17,6 @@
             </div>
         @endif
         {!! BootForm::open()->action(route('message.store'))->style('font-size:15px;')->post() !!}
-        {!! BootForm::text('E-Mail', 'email') !!}
         {!! BootForm::textarea('Message','description') !!}
         {!! BootForm::submit('Submit')->style('display:block;margin:0px auto;') !!}
         {!! BootForm::close() !!}

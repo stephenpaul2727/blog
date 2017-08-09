@@ -24,6 +24,7 @@
     <a href="/logout">LOGOUT</a>
     <a href="/history/index">HISTORY</a>
     <a href="/message/create">MESSAGE</a>
+    <a href="/timeline">DISCUSSION</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toggleVerticalLayout()">&#9776;</a>
 </div>
 

@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
+use App\Models\Reply;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class RepliesController extends Controller
 {
@@ -45,7 +49,27 @@ class RepliesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'description' => 'required|max:250',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('/timeline')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        $reply = new Reply;
+        if(Auth::user()->name == "ADMIN"){
+            $message = Message::find($request->message_id)->first();
+            $message->reply = $request->description;
+            $message->save();
+        }
+        $reply->username = Auth::user()->name;
+        $reply->reply_message = $request->description;
+        $reply->message_id = $request->message_id;
+        $reply->save();
+        $request->session()->flash('success','Your message is delivered!');
+        return redirect('/timeline');
     }
 
     /**

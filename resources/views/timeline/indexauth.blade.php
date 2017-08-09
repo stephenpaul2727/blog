@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.home')
 
 @section('content')
     <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
@@ -14,16 +14,20 @@
             </div>
             @foreach($replies as $k=>$r)
                 @if($r->message_id === $val->id)
-                    <div style="padding-left: 5%">
-                        <div class="panel panel-default">
-                            <div class="panel-body" style="font-size: 14px;">
-                                <span style="text-decoration: underline">{{ $r->username }}</span>: {{ $r->reply_message }}<span class="pull-right">{{ $r->date_modified }}</span>
-                            </div>
+                <div style="padding-left: 5%">
+                    <div class="panel panel-default">
+                        <div class="panel-body" style="font-size: 14px;">
+                            <span style="text-decoration: underline">{{ $r->username }}</span>: {{ $r->reply_message }}<span class="pull-right">{{ $r->date_modified }}</span>
                         </div>
                     </div>
+                </div>
                 @endif
             @endforeach
-            <a href="/login"><button type="button" class="btn btn-danger btn-sm form-control margin">Reply</button></a>
+                {!! BootForm::open()->action(route('reply.store'))->post() !!}
+                {!! BootForm::textarea('Reply:','description') !!}
+                {!! BootForm::text('Message','message_id')->hideLabel()->defaultValue($val->id)->style('display:none;') !!}
+                {!! BootForm::submit('Submit') !!}
+                {!! BootForm::close() !!}
         @endforeach
     </div>
 @endsection

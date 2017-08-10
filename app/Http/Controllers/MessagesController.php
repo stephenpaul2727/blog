@@ -19,7 +19,8 @@ class MessagesController extends Controller
     {
         $user_email = Auth::user()->email;
         $messages = Message::where('email','=',$user_email)->get();
-        return view('history.index')->with('messages',$messages);
+        $replies = Reply::all();
+        return view('history.index')->with('messages',$messages)->with('replies',$replies);
     }
 
     /**

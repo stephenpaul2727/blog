@@ -12,18 +12,17 @@
             {{ $val->description }}
         </div>
     </div>
-    @if($val->reply!='')
-    <div style="padding-left: 5%">
-        <div class="panel panel-default">
-            <div class="panel-heading " style="font-size: 16px;">
-               Stephen Paul
+    @foreach($replies as $k=>$r)
+        @if($r->message_id === $val->id)
+            <div style="padding-left: 5%">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="font-size: 14px;">
+                        <span style="text-decoration: underline">{{ $r->username }}</span>: {{ $r->reply_message }}<span class="pull-right">{{ $r->date_modified }}</span>
+                    </div>
+                </div>
             </div>
-            <div class="panel-body" style="font-size: 14px;">
-                {{ $val->reply }}
-            </div>
-        </div>
-    </div>
-    @endif
+        @endif
+    @endforeach
     @endforeach
 </div>
 @endsection

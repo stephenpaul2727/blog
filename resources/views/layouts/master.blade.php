@@ -19,6 +19,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">
 <div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
     <a style="float:left;text-align:left" href="/">Stephen Paul</a>
+    <a href="/login">LOGIN</a>
     <a href="/timeline">DISCUSSION</a>
     <a href="/login">MESSAGE</a>
     <a href="/files/resume.pdf" target="_blank">RÉSUMÉ</a>

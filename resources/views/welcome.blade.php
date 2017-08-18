@@ -7,7 +7,7 @@
     <h3>I am a graduate student, developer, explorer and a caffeine addict.</h3>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="720">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="820">
     <div class="container-fluid" style="padding-top:5px; padding-bottom: 5px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

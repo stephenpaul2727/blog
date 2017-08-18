@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container-fluid bg-1 text-center">
+<div class="container-fluid bg-1 text-center" style="height: 100vh;">
     <h3 class="margin">Who Am I?</h3>
     <img src={{ URL::asset('images/stephen.jpg') }} class="img img-circle img-responsive margin" style="display:inline" alt="Stephen's Pic" height="200" width="200">
     <h3>I am a graduate student, developer, explorer and a caffeine addict.</h3>

@@ -107,7 +107,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid" style="background-color: #ffc0cb; color: #5e5e5e; height:auto; padding-top: 50px;">
+<div id="section4" class="container-fluid" style="background-color: #ffc0cb; color: #5e5e5e; height:auto; padding-top: 50px;">
     <h2 class="margin">Skills</h2>
     <div class="row">
         <div class="col-sm-3">

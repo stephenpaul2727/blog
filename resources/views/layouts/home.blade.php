@@ -32,7 +32,7 @@
 @yield('content')
 
 <!-- Footer -->
-<footer class="container-fluid bg-2 text-center" style="margin-bottom: 0px; bottom:0px;">
+<footer id="section5" class="text-center">
     I am a social person too. Let's stay connected. <br/>
     <a href="https://www.facebook.com/stephenpaul2727" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
     <a href="https://www.instagram.com/s_t_e_p_h_e_n_p_a_u_l" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>

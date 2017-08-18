@@ -107,8 +107,8 @@
         </div>
     </div>
 </div>
-<div id="section4" class="container-fluid">
-    <h1 class="margin">Skills</h1>
+<div class="container-fluid" id="section4">
+    <h2 class="margin">Skills</h2>
     <div class="row">
         <div class="col-sm-3">
             <p>Programming Languages</p>

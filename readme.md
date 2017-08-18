@@ -12,3 +12,5 @@ Connect and discuss with me and others through my blog.
 Create an account for yourself and respond to others discussions.
 
 Track my response to your post by label ADMIN.
+
+Let me know if any modifications to the website are required.

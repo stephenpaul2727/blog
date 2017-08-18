@@ -32,7 +32,7 @@
 @yield('content')
 
 <!-- Footer -->
-<footer id="section5" class="text-center">
+<div class="container-fluid text-center" style="padding-top:50px;height:auto;color: #fff; background-color: #2f2f2f; ">
     I am a social person too. Let's stay connected. <br/>
     <a href="https://www.facebook.com/stephenpaul2727" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
     <a href="https://www.instagram.com/s_t_e_p_h_e_n_p_a_u_l" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
@@ -40,7 +40,7 @@
     <a href="https://www.linkedin.com/in/stephen-paul-adithela-9b8793114/" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
     <div class="margin"></div>
     &copy 2017 Stephen Paul
-</footer>
+</div>
 
 <script>
     function toggleVerticalLayout() {

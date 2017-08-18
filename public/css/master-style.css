@@ -165,8 +165,6 @@ body {
 #section1 {padding-top:50px;height:auto;color: #F8F8F8; background-image: url('/images/aboutme.jpg'); background-size: cover;}
 #section2 {padding-top:50px;height:auto;color: #5e5e5e; background-image: url('/images/education.jpg'); background-size: cover;}
 #section3 {padding-top:50px;height:auto;color: #5e5e5e; background-image: url('/images/experience.jpg'); background-size: cover;}
-#section4 {background-color: #ffc0cb; color: #5e5e5e; height:auto; padding-top: 50px;}
-#section5 {padding-top:50px;height:auto;color: #fff; background-color: #2f2f2f; }
 
 
 .section-inner {

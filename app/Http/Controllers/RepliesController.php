@@ -59,11 +59,6 @@ class RepliesController extends Controller
                 ->withInput();
         }
         $reply = new Reply;
-        if(Auth::user()->name == "ADMIN"){
-            $message = Message::find($request->message_id)->first();
-            $message->reply = $request->description;
-            $message->save();
-        }
         $reply->username = Auth::user()->name;
         $reply->reply_message = $request->description;
         $reply->message_id = $request->message_id;

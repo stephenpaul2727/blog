@@ -22,7 +22,7 @@
     </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #FFFFFF;">
 <div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
     <a style="float:left;text-align:left" href="/">Stephen Paul</a>
     <a href="/login">LOGIN</a>

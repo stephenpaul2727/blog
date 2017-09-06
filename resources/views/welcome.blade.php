@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container-fluid bg-1 text-center" style="height: 100vh;background-image: {{ URL::asset('images/bg-image.jpg') }} ">
+<div class="container-fluid bg-1 text-center parallax" style="height: 100vh;background: url({{ URL::asset('images/bg-image.jpg') }}) no-repeat left top;color: #000000; background-attachment: fixed;background-repeat: no-repeat;">
     <h3 class="margin">Who Am I?</h3>
     <img src={{ URL::asset('images/stephen.jpg') }} class="img img-circle img-responsive margin" style="display:inline" alt="Stephen's Pic" height="200" width="200">
     <h3>I am a graduate student, developer, explorer and a caffeine addict.</h3>

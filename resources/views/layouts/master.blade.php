@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="//stephensblog.herokuapp.com/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var height = jQuery(window).height();
+            $('#navScroll').affix({offset: {top: height+100} });
+        });
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">

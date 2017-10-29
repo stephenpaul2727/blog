@@ -1,13 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container-fluid bg-1 text-center" style="height: 100vh;">
+<div class="container-fluid bg-1 text-center parallax" style="height: 100vh;background: url({{ URL::asset('images/bg-image.jpg') }}) no-repeat left top;color: #000000; background-attachment: fixed;background-repeat: no-repeat;">
     <h3 class="margin">Who Am I?</h3>
     <img src={{ URL::asset('images/stephen.jpg') }} class="img img-circle img-responsive margin" style="display:inline" alt="Stephen's Pic" height="200" width="200">
     <h3>I am a graduate student, developer, explorer and a tech enthusiast.</h3>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="820">
+<nav id="navScroll" class="navbar navbar-inverse" data-spy="affix">
     <div class="container-fluid" style="padding-top:5px; padding-bottom: 5px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

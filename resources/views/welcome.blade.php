@@ -92,7 +92,7 @@
             </div>
             <div class="media-body">
                 <h3 class="media-heading">University Information Technology Services</h3>
-                <p>Mobile App Developer(credit)</b><br/>Jan 2017 to May 2017.</p>
+                <p>Application Development Internship</b><br/>Jan 2017 to May 2017.</p>
             </div>
         </div>
         <div class="margin"></div>

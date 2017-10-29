@@ -4,7 +4,7 @@
 <div class="container-fluid bg-1 text-center" style="height: 100vh;">
     <h3 class="margin">Who Am I?</h3>
     <img src={{ URL::asset('images/stephen.jpg') }} class="img img-circle img-responsive margin" style="display:inline" alt="Stephen's Pic" height="200" width="200">
-    <h3>I am a graduate student, developer, explorer and a caffeine addict.</h3>
+    <h3>I am a graduate student, developer, explorer and a tech enthusiast.</h3>
 </div>
 
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="820">
@@ -47,7 +47,7 @@
             </div>
             <div class="media-body">
                 <h3 class="media-heading">Indiana University</h3>
-                <p>Bloomington, Indiana, United States</b><br/>Masters in Computer Science, Class of 2018<br/>G.P.A: 3.53</p>
+                <p>Bloomington, Indiana, United States</b><br/>Masters in Computer Science, Class of 2018<br/>G.P.A: 3.52</p>
             </div>
         </div>
         <div class="margin"></div>
@@ -67,22 +67,22 @@
     <div class="section-inner">
         <div class="media">
             <div class="media-left">
-                <a href="https://communications.iu.edu/" target="_blank"><img src="{{URL::asset('/images/iucomm.jpg')}}" alt="IU Communications Logo" class="media-object" style="width:100px;height: 100px"></a>
+                <a href="https://igs.indiana.edu/" target="_blank"><img src="{{URL::asset('/images/iu.png')}}" alt="IGS Logo" class="media-object" style="width:100px;height: 100px"></a>
             </div>
             <div class="media-body">
-                <h3 class="media-heading">IU Communications</h3>
-                <p>Assistant New Media Developer & Web Developer</b><br/>June 2017 to present.</p>
-
+                <h3 class="media-heading">homeSHARE Indiana University</h3>
+                <p>Research and Development Assistant</b><br/>Aug 2017 to present.
             </div>
         </div>
         <div class="margin"></div>
         <div class="media">
             <div class="media-left">
-                <a href="https://igs.indiana.edu/" target="_blank"><img src="{{URL::asset('/images/igs.png')}}" alt="IGS Logo" class="media-object" style="width:100px;height: 100px"></a>
+                <a href="https://communications.iu.edu/" target="_blank"><img src="{{URL::asset('/images/iucomm.jpg')}}" alt="IU Communications Logo" class="media-object" style="width:100px;height: 100px"></a>
             </div>
             <div class="media-body">
-                <h3 class="media-heading">Indiana Geological Survey</h3>
-                <p>Part Time Web Developer</b><br/>May 2017 to present.
+                <h3 class="media-heading">Indiana University</h3>
+                <p><strong>Web Developer</strong><br/>June 2017 to present.</p>
+
             </div>
         </div>
         <div class="margin"></div>
@@ -114,43 +114,40 @@
             <p>Programming Languages</p>
             <ul>
                 <li>Java</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>Javascript</li>
                 <li>PHP</li>
-                <li>Python</li>
+                <li>Javascript</li>
                 <li>SQL</li>
-                <li>Ruby</li>
+                <li>C++</li>
+                <li>Python</li>
             </ul>
         </div>
         <div class="col-sm-3">
-            <p>Tools</p>
+            <p>Cloud/API</p>
             <ul>
-                <li>GitHub</li>
-                <li>JIRA</li>
-                <li>Slack</li>
-                <li>CodeClimate</li>
+                <li>REST</li>
+                <li>GIT</li>
+                <li>Docker</li>
                 <li>Travis CI</li>
-                <li>Eclipse</li>
-                <li>Spring Tool Suite</li>
-                <li>Adobe Suite</li>
-            </ul>
-        </div>
-        <div class="col-sm-3">
-            <p>Databases & Servers</p>
-            <ul>
-                <li>Postgres</li>
-                <li>MySQL</li>
-                <li>Oracle 10g</li>
-                <li>Redis</li>
-                <li>Apache Tomcat</li>
                 <li>AWS</li>
-                <li>Solr</li>
-                <li>Lucene</li>
+                <li>Jenkins</li>
+                <li>RabbitMQ</li>
+                <li>Kubernetes</li>
             </ul>
         </div>
         <div class="col-sm-3">
-            <p>Frameworks</p>
+            <p>Databases/Management</p>
+            <ul>
+                <li>MySQL</li>
+                <li>Postgres</li>
+                <li>SQL Server</li>
+                <li>Oracle 10.x</li>
+                <li>Mongo DB</li>
+                <li>Redis</li>
+                <li>Solr</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <p>Testing/Frameworks</p>
             <ul>
                 <li>Spring MVC</li>
                 <li>React JS</li>

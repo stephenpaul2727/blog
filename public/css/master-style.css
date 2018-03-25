@@ -2,8 +2,7 @@ body
 {
     font: 20px 'Quicksand', sans-serif;
     line-height: 1.5;
-    color: #000000;
-    background-color: #ffffff;
+    color: #cccccc;
     position: relative;
 }
 p
@@ -161,12 +160,6 @@ body {
     }
 }
 
-
-#section1 {padding-top:50px;height:auto;color: #F8F8F8; background-image: url('/images/aboutme.jpg'); background-size: cover;}
-#section2 {padding-top:50px;height:auto;color: #5e5e5e; background-image: url('/images/education.jpg'); background-size: cover;}
-#section3 {padding-top:50px;height:auto;color: #5e5e5e; background-image: url('/images/experience.jpg'); background-size: cover;}
-
-
 .section-inner {
     width: 70%;
     height: 100%;
@@ -179,5 +172,3 @@ body {
         background-attachment: scroll;
     }
 }
-
-

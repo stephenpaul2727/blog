@@ -22,7 +22,7 @@
     </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #7FCECB;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #8290a5;">
 <div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
     <a style="float:left;text-align:left" href="/">Stephen Paul</a>
     <a href="/login">LOGIN</a>
@@ -36,12 +36,12 @@
 @yield('content')
 
 <!-- Footer -->
-<div class="container-fluid text-center" style="padding-top:50px;height:auto;color: #fff; background-color: #2f2f2f; bottom: 0px; ">
+<div class="container-fluid text-center" style="padding-top:50px;height:auto;color: #cccccc; background-color: #000000; bottom: 0px; ">
     I am a social person too. Let's stay connected. <br/>
     <a href="https://www.facebook.com/stephenpaul2727" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/s_t_e_p_h_e_n_p_a_u_l" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/stephen_paul_ad" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
     <a href="https://github.com/stephenpaul2727" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/stephen-paul-adithela-9b8793114/" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/stephenadithela/" target="_blank" style="text-decoration:none;color: inherit;display:inline-flex"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
     <div class="margin"></div>
     &copy 2017 Stephen Paul
 </div>
@@ -58,4 +58,3 @@
 </script>
 </body>
 </html>
-

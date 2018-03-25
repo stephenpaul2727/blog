@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container" style="margin-top: 10%;margin-bottom: 10%;font-size: 16px;">
-    <h4 class="margin" style="text-align:center">Please login to post a message. This is necessary to avoid spamming.</h4>
+    <h3 class="margin" style="text-align:center;">Please login to post a message. This is necessary to avoid spamming.</h3>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

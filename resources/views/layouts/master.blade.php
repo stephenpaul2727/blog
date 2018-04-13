@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="//stephensblog.herokuapp.com/css/master-style.css">
-    <link rel="stylesheet" href="//stephensblog.herokuapp.com/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ url('css/master-style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url('css/font-awesome.css') }}" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
@@ -25,9 +25,9 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #8290a5;">
 <div class="container-fluid navHead" id="mainNav" style="padding-top: 25px; padding-bottom: 25px;">
     <a style="float:left;text-align:left" href="/">Stephen Paul</a>
-    <a href="/login">LOGIN</a>
-    <a href="/timeline">DISCUSSION</a>
-    <a href="/login">MESSAGE</a>
+    <a href="{{ url('login')}}">LOGIN</a>
+    <a href="{{ url('timeline')}}">DISCUSSION</a>
+    <a href="{{ url('login')}}">MESSAGE</a>
     <a href="/files/resume.pdf" target="_blank">RÉSUMÉ</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toggleVerticalLayout()">&#9776;</a>
 </div>

@@ -6,4 +6,4 @@
 Homestead.json
 Homestead.yaml
 .env.dev
-
+.DS_Store

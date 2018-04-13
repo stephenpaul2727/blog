@@ -51,7 +51,7 @@
   </blockquote>
 </div>
 
-<div id="section1" class="container-fluid bg-1 parallax" style="height:100vh;background: url({{ URL::asset('images/shore.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
+<div id="section1" class="container-fluid bg-1 parallax" style="height:auto;background: url({{ URL::asset('images/shore.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
     <h1 class="margin">Education</h1>
     <div class="section-inner">
         <div class="media">
@@ -81,7 +81,7 @@
     <footer class="blockquote-footer"><cite title="Source Title">Julius Ceasar</cite></footer>
   </blockquote>
 </div>
-<div id="section2" class="container-fluid bg-1 parallax" style="height:100vh;background: url({{ URL::asset('images/tree.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
+<div id="section2" class="container-fluid bg-1 parallax" style="height:auto;background: url({{ URL::asset('images/tree.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
     <h2 class="margin">Experience</h2>
     <div class="section-inner">
         <div class="media">
@@ -132,7 +132,7 @@
     <footer class="blockquote-footer"><cite title="Source Title">Thomas Fuller</cite></footer>
   </blockquote>
 </div>
-<div id="section3" class="container-fluid bg-1 parallax" style="height:70vh;background: url({{ URL::asset('images/smoke.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
+<div id="section3" class="container-fluid bg-1 parallax" style="height:auto;background: url({{ URL::asset('images/smoke.jpg') }}) no-repeat left top;color: #ffffff; background-attachment: fixed;background-repeat: no-repeat;">
     <h2 class="margin">Skills</h2>
     <div class="row">
         <div class="col-sm-2">

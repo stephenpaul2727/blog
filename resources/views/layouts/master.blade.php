@@ -31,7 +31,7 @@
     <a href="/files/resume.pdf" target="_blank">RÉSUMÉ</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="toggleVerticalLayout()">&#9776;</a>
 </div>
-
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 @yield('content')
 
@@ -55,6 +55,34 @@
             x.className = "container navHead";
         }
     }
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 200) {
+            $('#return-to-top').fadeIn(200);
+        } else {
+            $('#return-to-top').fadeOut(200);
+        }
+    });
+    $('#return-to-top').click(function() {
+        $('body,html').animate({
+            scrollTop : 0
+        }, 500);
+    });
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
 </script>
 </body>
 </html>

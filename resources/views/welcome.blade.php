@@ -100,7 +100,7 @@
             </div>
             <div class="media-body">
                 <h2 class="media-heading">Indiana University</h2>
-                <p><strong>Web Developer</strong><br/>June 2017 to present.</p>
+                <p><strong>Web Developer Internship</strong><br/>June 2017 to present.</p>
 
             </div>
         </div>

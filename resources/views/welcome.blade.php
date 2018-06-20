@@ -89,8 +89,8 @@
                 <a href="https://igs.indiana.edu/" target="_blank"><img src="{{URL::asset('/images/uits.png')}}" alt="IGS Logo" class="media-object" style="width:150px;height: 150px"></a>
             </div>
             <div class="media-body">
-                <h2 class="media-heading">UITS at IU</h2>
-                <p>Information Technology Intern</b><br/>Dec 2017 to present.
+                <h2 class="media-heading">Indiana University (UITS)</h2>
+                <p>Graduate Research Intern</b><br/>Dec 2017 to present.
             </div>
         </div>
         <div style="padding: 15px;"></div>
@@ -100,7 +100,7 @@
             </div>
             <div class="media-body">
                 <h2 class="media-heading">Indiana University</h2>
-                <p><strong>Web Developer Internship</strong><br/>June 2017 to present.</p>
+                <p><strong>Web Development Intern</strong><br/>June 2017 to Dec 2017.</p>
 
             </div>
         </div>
@@ -110,8 +110,8 @@
                 <a href="https://uits.indiana.edu/" target="_blank"><img src="{{URL::asset('/images/uits.png')}}" alt= "uits logo" class="media-object" style="width:150px;height: 150px"></a>
             </div>
             <div class="media-body">
-                <h2 class="media-heading">UITS at IU</h2>
-                <p>Information Technology Intern</b><br/>Dec 2016 to May 2017.</p>
+                <h2 class="media-heading">Indiana University (UITS)</h2>
+                <p>Student Intern</b><br/>Jan 2017 to June 2017.</p>
             </div>
         </div>
         <div style="padding: 15px;"></div>
@@ -139,9 +139,9 @@
             <p>Programming Languages</p>
             <ul>
                 <li>Java</li>
+                <li>Javascript</li>
                 <li>PHP</li>
                 <li>Python</li>
-                <li>Javascript</li>
             </ul>
         </div>
         <div class="col-sm-2">
@@ -151,7 +151,7 @@
                 <li>GIT</li>
                 <li>Docker</li>
                 <li>AWS</li>
-                <li>RabbitMQ</li>
+                <li>Ansible</li>
                 <li>Kubernetes</li>
             </ul>
         </div>
@@ -159,8 +159,6 @@
             <p>Databases/Management</p>
             <ul>
                 <li>MySQL</li>
-                <li>Postgres</li>
-                <li>SQLite</li>
                 <li>Mongo DB</li>
             </ul>
         </div>
@@ -179,7 +177,6 @@
                 <li>React JS</li>
                 <li>JQuery</li>
                 <li>Vue JS</li>
-                <li>AngularJS</li>
             </ul>
         </div>
     </div>
